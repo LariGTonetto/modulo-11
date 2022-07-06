@@ -5,7 +5,7 @@ var faker = require('faker');
 describe ('Funcionalidade Pré-cadastro', () =>{
 
     beforeEach ( () => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+        cy.visit('minha-conta')
     
       });
 
