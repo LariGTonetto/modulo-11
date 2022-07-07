@@ -11,7 +11,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
     });
 
     it.only('Deve fazer cadastro de faturamento com sucesso', () => {
-        EnderecoPage.editarEnderecoFaturamento()
+        EnderecoPage.editarEnderecoFaturamento('Ana', 'Banana', 'Google', 'Brasil', 'Rua Bananal', '123', 'Santos', 'São Paulo', '11222333', '11987654321', 'banana@teste.com')
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
     });
 
